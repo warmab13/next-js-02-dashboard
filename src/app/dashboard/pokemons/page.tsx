@@ -10,6 +10,8 @@ const getPokemons = async (limit = 20, offset = 0): Promise<SimplePokemon> => {
         name: pokemon.name,
     }))
 
+    //throw new Error('Esto es un error que no deberia de suceder');
+
     return pokemons
 }
 

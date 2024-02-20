@@ -1,6 +1,5 @@
-import React from 'react'
 import Image from 'next/image';
-import utchLogo from '../../../public/utch-sur.png'
+import utchLogo from '../../public/utch-sur.png'
 import { SidebarMenuItem } from './SidebarMenuItem';
 import { IoBrowsersOutline, IoCalculator, IoFootball } from 'react-icons/io5';
 const menuItems = [

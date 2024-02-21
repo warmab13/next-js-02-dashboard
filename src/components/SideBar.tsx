@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import utchLogo from '../../public/utch-sur.png'
 import { SidebarMenuItem } from './SidebarMenuItem';
-import { IoBrowsersOutline, IoCalculator, IoFootball } from 'react-icons/io5';
+import { IoBrowsersOutline, IoCalculator, IoFootball, IoHeartOutline } from 'react-icons/io5';
 const menuItems = [
     {
         path: '/dashboard/main',
@@ -20,6 +20,12 @@ const menuItems = [
         icon: <IoFootball size={40}  />,
         title: 'Pokemons',
         subTitle: 'Statics'
+    },
+    {
+        path: '/dashboard/favorites',
+        icon: <IoHeartOutline size={40}  />,
+        title: 'Favorites',
+        subTitle: 'Global State'
     }
 ]
 

@@ -1,6 +1,15 @@
+import Link from "next/link";
 import { IoCafeOutline } from "react-icons/io5"
 
-export const SimpleWidget = () => {
+interface Props {
+  title: string;
+  subTitle?: string;
+  label?: string;
+  icon?: React.ReactNode;
+  href?: string;
+}
+
+export const SimpleWidget = ({}: Props) => {
   return (
     <div className="bg-white shadow-xl p-3 sm:min-w-[25%] min-w-full  rounded-2xl border-1 border-gray-50 mx-2 m-2">
       <div className="flex flex-col">
@@ -21,7 +30,7 @@ export const SimpleWidget = () => {
         </div>
 
         <div className="w-full place-items-end text-right border-t-2 border-gray-100 mt-2">
-            <a href="#" className="text-indigo-600 text-xs font-medium">Más</a>
+            <Link href="#" className="text-indigo-600 text-xs font-medium">Más</Link>
         </div>
         
       </div>

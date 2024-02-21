@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
-import { SimpleWidget } from '../../../components/SimpleWidget';
+import { SimpleWidget } from '../../../components/dashboard/SimpleWidget';
+import { WidgetsGrid } from '../../../components/dashboard/WidgetsGrid';
 
 export const metadata:Metadata = {
   title: 'Admin Dashboard',
@@ -11,9 +12,7 @@ export default function MainPage() {
     <div className="text-black p-2">
       <h1 className="text-3xl">Dashboard</h1>
       <span className="text-xl">General info</span>
-      <div className="flex flex-wrap p-2">
-        <SimpleWidget />
-      </div>
+      <WidgetsGrid />
     </div>
   );
 }

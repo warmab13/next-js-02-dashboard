@@ -23,7 +23,7 @@ const menuItems = [
     },
     {
         path: '/dashboard/favorites',
-        icon: <IoHeartOutline size={40}  />,
+        icon: <IoHeartOutline size={40} />,
         title: 'Favorites',
         subTitle: 'Global State'
     }

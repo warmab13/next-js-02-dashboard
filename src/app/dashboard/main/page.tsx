@@ -1,6 +1,5 @@
+import { WidgetsGrid } from '@/components';
 import { Metadata } from 'next';
-import { SimpleWidget } from '../../../components/dashboard/SimpleWidget';
-import { WidgetsGrid } from '../../../components/dashboard/WidgetsGrid';
 
 export const metadata:Metadata = {
   title: 'Admin Dashboard',
